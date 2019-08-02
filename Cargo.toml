@@ -1,0 +1,10 @@
+[package]
+name = "dandy"
+version = "0.1.0"
+authors = ["jjohnson <jordan@tyemill.com>"]
+edition = "2018"
+
+[dependencies]
+strum = "0.11.0"
+strum_macros = "0.11.0"
+error-chain = "0.12.1"
