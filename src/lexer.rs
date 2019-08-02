@@ -46,25 +46,7 @@ impl<'lex> Iterator for Lexer<'lex> {
   }
 }
 
-// #[cfg(test)]
-// mod tests {
-//   use super::*;
-
-//   #[test]
-//   fn test_parsing_integer() {
-//     let s: String = "1".to_string();
-//     assert_eq!(vec![Token::Integer(1)], tokenize(&s));
-
-//     let s: String = "123".to_string();
-//     assert_eq!(vec![Token::Integer(123)], tokenize(&s));
-//   }
-
-//   #[test]
-//   fn test_parsing_expression() {
-//     let s: String = "1 + 1".to_string();
-//     assert_eq!(vec![Token::Integer(1), Token::Plus, Token::Integer(1)], tokenize(&s));
-
-//     let s: String = "1 + -1".to_string();
-//     assert_eq!(vec![Token::Integer(1), Token::Plus, Token::Minus, Token::Integer(1)], tokenize(&s));
-//   }
-// }
+#[cfg(test)]
+mod tests {
+  use super::*;
+}

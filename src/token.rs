@@ -5,17 +5,13 @@ use std::fmt;
 pub enum Token {
   Integer(i64),
   Minus,
-  Plus,
-  Multiply,
-  Divide
+  Plus
 }
 
 impl fmt::Display for Token {
   fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
     match *self {
       Token::Integer(i) => write!(f, "{}", i),
-      Token::Multiply => write!(f, "*"),
-      Token::Divide => write!(f, "/"),
       Token::Minus => write!(f, "-"),
       Token::Plus => write!(f, "+")
     }
